@@ -460,8 +460,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8780768977475051104, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3262601599098548584}
   m_SourcePrefab: {fileID: 100100000, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+--- !u!1 &3262601599098548583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8780768977475051104, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+  m_PrefabInstance: {fileID: 3262601599098548582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3262601599098548584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262601599098548583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ace9f2b9fd9a4f4e82b28b6c89d4099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 7033244778177871313, guid: 271779454dfc741a1a66514e8d9bb88b, type: 3}
+  barrel: {fileID: 3262601599098548586}
+  tankInput: {fileID: 3262601599098548585}
+--- !u!114 &3262601599098548585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1135216465699009086, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+  m_PrefabInstance: {fileID: 3262601599098548582}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &3262601599098548586 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1608874691270269873, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+  m_PrefabInstance: {fileID: 3262601599098548582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

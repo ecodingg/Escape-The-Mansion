@@ -57,7 +57,5 @@ public class TankControls : MonoBehaviour
         controller.Move(move * moveSpeed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-        
-        
     }
 }
