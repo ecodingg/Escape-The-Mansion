@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AmmoContainer : MonoBehaviour
 {
+    [SerializeField] private Pistol gun;
+    
     // Update is called once per frame
     void Update()
     {
@@ -12,9 +14,12 @@ public class AmmoContainer : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        
+        Debug.Log("Collision detected!");
+        
         if (collision.collider.tag == "Player")
         {
-            //collision.gameObject.AddBullets(12);
+            gun.AddBullets(12);
             Destroy(this.gameObject);
         }
     }

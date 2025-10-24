@@ -19,6 +19,8 @@ public class Pistol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(bulletHolder);
+        
         fireAction = tankInput.actions["Fire"];
         reloadAction = tankInput.actions["Reload"];
         

@@ -449,6 +449,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1426111380545679964, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4583154533630359272, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
       propertyPath: m_Name
       value: Player
@@ -461,6 +465,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: daaba8650ad8a2d4d8d940dd5b1a221d, type: 2}
+    - target: {fileID: 6176703204472826700, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780768977475051104, guid: 0bdd9c7f2567a8842ac187d276d45b86, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -557,6 +569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869752964280127803, guid: c9cb5afcba29346018386d74141ef320, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 3262601599098548584}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
