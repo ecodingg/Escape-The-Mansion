@@ -15,14 +15,14 @@ public class TankControls : MonoBehaviour
     private bool isGrounded;
     
     //Input Action Variables
-    private InputAction forwardAction, rightAction;
+    private InputAction forwardAction, rightAction, sprintAction, interactAction;
     
     //Serialized Variables
     [SerializeField] private PlayerInput tankInput;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float rotateSpeed = 5f;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float rotateSpeed = .5f;
     
     #endregion
     
@@ -46,6 +46,8 @@ public class TankControls : MonoBehaviour
         //Get Actions from Input Actions
         forwardAction = tankInput.actions["Forward"];
         rightAction = tankInput.actions["Right"];
+        sprintAction = tankInput.actions["Sprint"];
+        interactAction = tankInput.actions["Interact"];
         
         //Floats for x and z axis movement
         float z = forwardAction.ReadValue<float>();
@@ -53,6 +55,16 @@ public class TankControls : MonoBehaviour
 
         Vector3 move = transform.forward * z;
         transform.Rotate(0f, rotateSpeed * x, 0f);
+
+        //Sprint change speed
+        if (sprintAction.IsInProgress())
+        {
+            moveSpeed = 5f;
+        }
+        else
+        {
+            moveSpeed = 3f;
+        }
         
         controller.Move(move * moveSpeed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
